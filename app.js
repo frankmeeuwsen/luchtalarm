@@ -11,7 +11,7 @@ const client = new Mastodon({
   api_url: `${MASTODON_INSTANCE}/api/v1/`,
 });
 
-cron.schedule('0 12 1-7 * 1', () => {
+cron.schedule('0 18 1-7 * 3', () => {
 
   // Replace with your toot message
   const toot = '@frank@indieweb.social This is a scheduled toot';
