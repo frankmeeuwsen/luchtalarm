@@ -2,7 +2,7 @@ const Mastodon = require('mastodon-api');
 const cron = require('node-cron');
 
 // Replace with your access token and Mastodon instance URL
-const ACCESS_TOKEN = 'SrQRozNE5_aY0dbpcVy7tSaNNvjP6xxU1DUN6GXMpXg';
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
 const MASTODON_INSTANCE = 'https://botsin.space';
 
 const client = new Mastodon({
