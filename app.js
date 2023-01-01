@@ -28,8 +28,8 @@ cron.schedule('0 12 1-7 * 1', () => {
       'wwoeoeoeoeoeoeoeoe  woeoeoeoeoe woeoeoeoeoeoeoeoe',
       'Het is weer maandag. Het is de eerste van de maand. Je weet wat dat betekent.... (schraapt keel).....wwwwwwoooooeeeeeee wwwooeeeeeee wooeeeee.... Tot volgende maand!'];
   const randotoot = texts[Math.floor(Math.random() * texts.length)];
-  const toot = `@frank@indieweb.social ${randotoot} \r\n#NLAlert #Luchtalarm`;
-  const visibility = 'direct';
+  const toot = `${randotoot} \r\n#NLAlert #Luchtalarm`;
+  const visibility = 'public';
   
   client.post('statuses', { status: toot, visibility: visibility })
     .then(result => {
